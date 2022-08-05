@@ -145,12 +145,12 @@ body::-webkit-scrollbar{
     font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 467px) {
     .nav__menu {
         position: fixed;
         top: var(--header-height);
         right: -100%;
-        width: 80%;
+        width: 50%;
         height: 100%;
         padding: 2rem;
         background-color: var(--second-color);
