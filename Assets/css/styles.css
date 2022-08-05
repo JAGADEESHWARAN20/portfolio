@@ -440,6 +440,13 @@ body::-webkit-scrollbar{
     margin-left: auto;
 }
 
+@media screen and max-width(345px){
+    .contact_input{
+        width:256px;
+        height:40px;
+    }
+}
+
 
 /* ===== FOOTER =====*/
 
