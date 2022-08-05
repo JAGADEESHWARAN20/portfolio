@@ -127,8 +127,10 @@ body::-webkit-scrollbar{
 @media screen and (max-width = 345px){
  .bd-grid{
      width:400px;
+    }    
+   .1-header{
+       width:45%;
     }
-    
 }
 
 .l-header {
