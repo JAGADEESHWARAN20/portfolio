@@ -426,6 +426,9 @@ img {
     transition:.2s;
     transform:scale(1);
   }
+  img{ 
+     Border-radius:20px;
+   }
   .home__social{
     position: absolute;
     right: 0;
