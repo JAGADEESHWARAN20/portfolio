@@ -235,7 +235,7 @@ img {
 
 .img {
    transition-duration: .5s;
-   border-radius: 30px; 
+   border-radius: 20px; 
 }
 
 /*BUTTONS*/
@@ -420,7 +420,11 @@ img {
     position: absolute;
     bottom: 0;
     right: 20px;
-
+    border-radius: 20px;
+  }
+  .home__img:hover{
+    transition:.2s;
+    transform:scale(1);
   }
   .home__social{
     position: absolute;
