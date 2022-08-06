@@ -232,7 +232,9 @@ img {
   background-color: var(--first-color);
   border-radius: 30px;
 }
-
+.profile{
+   border-radius:20px;
+}
 .img {
    transition-duration: .5s;
    border-radius: 30px; 
