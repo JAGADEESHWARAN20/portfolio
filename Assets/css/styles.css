@@ -236,9 +236,19 @@ img {
   background-color: var(--first-color);
   border-radius: 30px;
 }
-.profile{
-   border-radius:20px;
+.home__img:hover{ 
+    transform:rotate(-8deg)scale(1);
 }
+
+.profile {
+    border-radius: 30px;
+    transition: .5s;
+}
+.profile:hover{
+    transition: .5s;
+    transform: rotate(7deg)scale(1);
+ }
+    
 .img {
    transition-duration: .5s;
    border-radius: 30px; 
