@@ -8,7 +8,7 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
 --hue-color: 357;
-    --first-color: hsl(var(--hue-color), 67%, 38%);
+   --first-color: hsl(var(--hue-color), 67%, 38%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
@@ -69,7 +69,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius:35px;
 }
 .profile:hover{
   transform:rotate(5deg);
@@ -243,7 +242,8 @@ img {
    position: absolute;
   right: 0;
   bottom: 20px;
-  max-width: 77%;
+  width: 270px;
+  height: 270px;
   padding: 2px;
   border-radius: 30px;
 }
