@@ -230,12 +230,12 @@ img {
   max-width: 77%;
   padding: 2px;
   background-color: var(--first-color);
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .img {
    transition-duration: .5s;
-   border-radius: 20px; 
+   border-radius: 30px; 
 }
 
 /*BUTTONS*/
@@ -555,6 +555,7 @@ img {
     position: absolute;
     right: 10px;
     bottom: 0;
+    Border-radius:20px;
   }
   .work-6,.work-2{
     width: 500px;
