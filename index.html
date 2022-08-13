@@ -167,7 +167,7 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form onsubmit="SendMail()" class="contact__form">
+                <form onsubmit="SendMail()" class="contact__form" id="contact_form">
                     <input type="text" placeholder="Name" class="contact__input" id="Name">
                     <input type="mail" placeholder="Email" class="contact__input" id="Email">
                     <textarea cols="0" rows="10" class="contact__input" id="Message" ></textarea>
@@ -232,14 +232,27 @@
                                   
         function SendMail() {
            var params = {
-           From_Name :document.getElementById("Name").value,
-           Email_id : document.getElementById("Email").value,
+           Name:document.getElementById("Name").value,
+           Email: document.getElementById("Email").value,
            message: document.getElementById("Message").value
             }
             emailjs.send("service_saoxw2o", "template_357vgae", params ,"22WH5cXbJiCnoiZKc")
-           };                           
-    </script>
-                                  
-                                  
+           };     
+        
+           window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>                          
 </body>  
 </html>
