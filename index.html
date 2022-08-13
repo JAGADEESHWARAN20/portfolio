@@ -168,9 +168,9 @@
 
             <div class="contact__container bd-grid">
                 <form onsubmit="SendMail()" class="contact__form" id="contact_form">
-                    <input type="text" placeholder="Name" class="contact__input" id="Name">
-                    <input type="mail" placeholder="Email" class="contact__input" id="Email">
-                    <textarea cols="0" rows="10" class="contact__input" id="Message" ></textarea>
+                    <input type="text" placeholder="Name" class="contact__input" id="Name" required> 
+                    <input type="mail" placeholder="Email" class="contact__input" id="Email" required>
+                    <textarea cols="0" rows="10" class="contact__input" id="Message" required></textarea>
                     <input type="submit" value="Send" onclick="SendMail()" class="contact__button button">
                 </form>
             </div>
@@ -236,8 +236,10 @@
            email: document.getElementById("Email").value,
            message: document.getElementById("Message").value
             }
-            emailjs.send("service_saoxw2o", "template_357vgae", params ,"22WH5cXbJiCnoiZKc")
-           };     
+            emailjs.send("service_saoxw2o", "template_357vgae", params ,"22WH5cXbJiCnoiZKc");
+             
+            alert("Your Message Is Send Successfully")
+        };     
     </script>                          
 </body>  
 </html>
