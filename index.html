@@ -167,14 +167,11 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form onsubmit="sendEmail(); reset(); return false; action="https://formsubmit.co/jagadeeshwaransp5@gmail.com" method="POST" class="contact__form">
+                <form onsubmit="sendEmail()" ref="form" class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input" id="Name">
                     <input type="mail" placeholder="Email" class="contact__input" id="Email">
                     <textarea cols="0" rows="10" class="contact__input" id="Message" ></textarea>
-                    <input type="submit" value="Send" class="contact__button button" action="https://formsubmit.co/jagadeeshwaransp5@gmail.com">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="New submission!">
-                    <input type="hidden" name="_next" value="https://jagadeeshwaran20.github.io/portfolio/thanks.html">
+                    <input type="submit" value="Send" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -226,22 +223,25 @@
         });
 
         </script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "jagadeeshwaransp5@gmail.com",
-                Password: "JAGADEESH2011",
-                To: 'jagadeeshwaransp5@gmail.com',
-                From: document.getElementById("Email").value,
-                Subject: "New message",
-                Body: "Name:"+document.getElementById("Name").value
-                     +"<br> Email:" +document.getElementById("Email").value
-                     +"<br> Message:" +document.getElementById("Message").value }).then(
-                message => alert("message send successfully")
-            );
-        }
-    </script>
-</body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('22WH5cXbJiCnoiZKc');
+        })();
+                                  
+         const form = useRef();
 
+         function SendMail() {
+           var params = {
+           From_Name :document.getElementById("Name").value,
+           Email_id : document.getElementById("Email").value,
+           message: document.getElementById("Message").value
+            }
+            emailjs.send("service_saoxw2o", "template_357vgae", params ,"22WH5cXbJiCnoiZKc")
+           };                           
+    </script>
+                                  
+                                  
+</body>  
 </html>
