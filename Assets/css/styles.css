@@ -44,6 +44,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.title_icon{
+  width:16px;
+  height:16px;  
+}
+
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
