@@ -137,7 +137,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  z-index:1;
+  z-index:200;
 }
 
 @media screen and (max-width: 767px) {
@@ -151,7 +151,7 @@ img {
     background-color: transparent;
     filter:blur(60px);
     transition: .5s;
-    z-index:3;
+    z-index:300;
   }
 }
 
