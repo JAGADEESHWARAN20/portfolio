@@ -113,7 +113,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  z-index:100
+  z-index:10;
 }
 .profile:hover{
   transform:rotate(5deg);
@@ -182,7 +182,8 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: transparent;
+    filter:blur(60px);
     transition: .5s;
     z-index:100;
   }
