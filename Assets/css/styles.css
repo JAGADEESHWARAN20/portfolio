@@ -43,10 +43,24 @@
 html {
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
 
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
 
-::-webkit-scrollbar{
-  display: none;
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
 }
 
 .title_icon{
@@ -79,7 +93,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  z-index:10;
 }
 .profile:hover{
   transform:rotate(5deg);
@@ -137,7 +150,6 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  z-index:200;
 }
 
 @media screen and (max-width: 767px) {
@@ -148,10 +160,8 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: transparent;
-    filter:blur(60px);
+    background-color: var(--second-color);
     transition: .5s;
-    z-index:300;
   }
 }
 
@@ -202,7 +212,6 @@ img {
 /*=== Show menu ===*/
 .show {
   right: 0;
-  z-index:10;
 }
 
 /*===== HOME =====*/
@@ -261,7 +270,6 @@ img {
   height: 270px;
   padding: 2px;
   border-radius: 30px;
-  z-index:80;
 }
 .profile {
     border-radius: 30px;
@@ -315,7 +323,6 @@ img {
 .skills__container {
   row-gap: 2rem;
   text-align: center;
-  z-index:100;
 }
 
 .skills__subtitle {
@@ -353,10 +360,10 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: transparent;
+  background-color: var(--first-color);
   height: .25rem;
   border-radius: .5rem;
-  z-index: var(--z-fixed);
+  z-index: var(--z-back);
 }
 
 .skills__html {
@@ -411,7 +418,6 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
-  z-index:100;
 }
 
 .contact__button {
@@ -421,7 +427,6 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
-  z-index:100;
 }
 
 /* ===== FOOTER =====*/
@@ -601,7 +606,6 @@ img {
     right: 10px;
     bottom: 0;
     Border-radius:20px;
-    z-index:100;
   }
   .work-6,.work-2{
     width: 500px;
