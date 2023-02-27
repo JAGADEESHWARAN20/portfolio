@@ -75,6 +75,10 @@ body {
   color: var(--second-color);
   
 }
+.dark {
+  color: white;
+  background-color:#002A30;
+}
 
 h1, h2, p {
   margin: 0;
