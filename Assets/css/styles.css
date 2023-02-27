@@ -43,7 +43,7 @@
 html {
   scroll-behavior: smooth;
 }
-div::before {
+body::before {
   z-index:-100;
   content: '';
   position: absolute;
