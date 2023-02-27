@@ -44,7 +44,7 @@ html {
   scroll-behavior: smooth;
 }
 body::after {
-  z-index:-100;
+  z-index:-300;
   content: '';
   position: absolute;
   left: 7%;
