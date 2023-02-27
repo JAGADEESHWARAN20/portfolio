@@ -384,7 +384,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: transparent;
   height: .25rem;
   border-radius: .5rem;
   z-index: var(--z-fixed);
