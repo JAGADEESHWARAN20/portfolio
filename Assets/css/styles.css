@@ -40,6 +40,9 @@
   box-sizing: border-box;
 }
 
+.hidden{
+	display:none;
+}
 
 html {
   scroll-behavior: smooth;
