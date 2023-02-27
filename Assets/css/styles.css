@@ -43,41 +43,7 @@
 html {
   scroll-behavior: smooth;
 }
-body::after {
-  z-index:-300;
-  content: '';
-  position: absolute;
-  left: 7%;
-  bottom: -10%;
-  height: 100%;
-  width: 100%;
-  background: conic-gradient(from 
--11.05deg at 50% 71.93%,#f73c9d 
-0deg,#c75c15 
-54.64deg,#fff6b0 
-65.63deg,#ff9456 
-73.72deg,#f15c0c 
-109.43deg,#ff5136 
-123.12deg,rgba(165, 74, 74, 0.87) 
-246.37deg,#d68b3f 
-266.49deg,#ffe018 
-270.77deg,rgba(228, 129, 30, 0.5) 
-1turn);
-  filter: blur(150px); 
-  background-color: #9c3cf7;
-  border-radius: 100%;
-  animation: rotate 50s infinite alternate forwards;
-}
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0) scale(2) translatey(-5%); 
-  }
-  100% {
-    transform: rotate(720deg) scale(2) translatey(-5%);
-    
-  }
-}
 
 ::-webkit-scrollbar{
   display: none;
