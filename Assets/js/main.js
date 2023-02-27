@@ -1,15 +1,4 @@
-const dark = document.queryselector(".moon");
-const light = document.queryselector(".sun");
 
-const darkmode =()=>[
-    if (dark === true){
-        light.classList.add("hidden");
-        dark.classList.add("dark");
-    }else{
-        moon.classList.add("hidden");
-        light.classList.add("");
-    }
-  }
 
 
 /*===== MENU SHOW =====*/
