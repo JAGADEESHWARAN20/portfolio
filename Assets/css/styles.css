@@ -89,7 +89,7 @@ body {
 337.21deg,#c15c04 
 1turn);
   filter: blur(50px); 
-  z-index: -1;
+  z-index: -100;
   animation: rotate 50s infinite alternate forwards;
 }
 
