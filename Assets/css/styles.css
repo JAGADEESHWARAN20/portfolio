@@ -57,13 +57,11 @@ body::before {
 54.64deg,#fff6b0 
 65.63deg,#ff9456 
 73.72deg,#f15c0c 
-119.43deg,#ff5136 
-193.12deg,rgba(165, 74, 74, 0.87) 
-226.37deg,#d68b3f 
-306.49deg,#ffe018 
-320.77deg,rgba(228, 129, 30, 0.5) 
-326.27deg,#aa3a06 
-337.21deg,#c15c04 
+109.43deg,#ff5136 
+123.12deg,rgba(165, 74, 74, 0.87) 
+246.37deg,#d68b3f 
+266.49deg,#ffe018 
+270.77deg,rgba(228, 129, 30, 0.5) 
 1turn);
   filter: blur(150px); 
   background-color: #9c3cf7;
