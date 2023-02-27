@@ -43,6 +43,8 @@
 #backdrop::after{
 	background-color:#ffaaa;
 	z-index:-5;
+	width:100%;
+	height:768px;
 }
 html {
   scroll-behavior: smooth;
