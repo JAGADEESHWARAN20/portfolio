@@ -202,6 +202,7 @@ img {
 /*=== Show menu ===*/
 .show {
   right: 0;
+  z-index:10;
 }
 
 /*===== HOME =====*/
