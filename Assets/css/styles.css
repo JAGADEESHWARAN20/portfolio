@@ -389,7 +389,7 @@ img {
   background-color: var(--first-color);
   height: .25rem;
   border-radius: .5rem;
-  z-index: var(--z-back);
+  z-index: var(--z-fixed);
 }
 
 .skills__html {
