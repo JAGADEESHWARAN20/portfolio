@@ -38,7 +38,6 @@
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
-	justify-content:center;
 }
 
 
@@ -466,7 +465,7 @@ img {
 
 .footer_nav {
   display: flex;
-  align-items: center;
+
   justify-content: center;
 }
 
