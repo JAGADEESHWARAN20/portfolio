@@ -501,7 +501,7 @@ img {
 .footer_list_nav{
 	display:flex;
 	  flex-direction: col;
-	  gap:3;
+	  gap:3px;
   }
 
 }
