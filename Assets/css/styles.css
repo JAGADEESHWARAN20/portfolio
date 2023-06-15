@@ -38,6 +38,7 @@
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
+	justify-content:center;
 }
 
 
@@ -126,6 +127,7 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+  
 }
 
 /*===== LAYOUT =====*/
@@ -482,13 +484,11 @@ img {
 
 @media screen and (min-width:1280px){
 .footer_nav{
-  width:100%;
   display:flex;
   align-items:center;
   justify-content:center;
 }
 .footer_list_nav{
-  width:100%;
   display:flex;
   justify-content:around;
 }
