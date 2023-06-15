@@ -432,12 +432,17 @@ img {
   margin-left: auto;
 }
 /* ===== FOOTER ===== */
+/* ===== FOOTER ===== */
 .footer {
   background-color: var(--second-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__title {
@@ -475,6 +480,7 @@ img {
 .footer_list_nav li {
   margin-right: 3px;
 }
+
 
 /* ===== MEDIA QUERIES ===== */
 @media screen and (max-width: 350px) {
