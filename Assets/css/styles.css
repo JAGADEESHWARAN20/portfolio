@@ -459,8 +459,8 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
 }
+
 .footer_nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -468,7 +468,6 @@ img {
 
 .footer_list_nav {
   display: flex;
-  flex-direction: row;
   gap: 3px;
   list-style: none;
   padding: 0;
@@ -477,6 +476,7 @@ img {
 .footer_list_nav li {
   margin-right: 3px;
 }
+
 
 
 /* ===== MEDIA QUERIES=====*/
